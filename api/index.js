@@ -8,6 +8,6 @@ const app = express();
 // ROUTER 
 app.use('/api/user', user);
 
-app.listen(config.api.por, () => {
+app.listen(config.api.port, () => {
     console.log('api listening...');
 });
