@@ -39,6 +39,7 @@ function upsert(req, res){
         response.success(req, res, user, 201);
     })
     .catch((err) => {
+        console.log(err)
         response.error(req, res, err.message, 500);
     })
 }
